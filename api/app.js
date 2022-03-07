@@ -24,11 +24,6 @@ sequelize
   .then(() => console.log('database synced'))
   .catch((err) => console.log(err));
 
-// Must structure project with routes, controllers and models folders (utils)
-
-// IMPORTANT: Prettier format
-
-// Install cors library (npm i cors)
 
 app.listen(4000, () => {
   console.log('express app running');
