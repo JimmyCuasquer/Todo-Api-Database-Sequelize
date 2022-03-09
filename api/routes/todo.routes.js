@@ -10,12 +10,12 @@ const {
 } = require('../controllers/todo.controller');
 
 // GET fetch all ToDos
-router.get('/todos', getAllTodos);
+router.get('/', getAllTodos);
 // POST Create new ToDo
-router.post('/todos', createTodos);
+router.post('/', createTodos);
 // PATCH Update ToDo given an ID
-router.patch('/todos/:id', patchTodos);
+router.patch('/:id', patchTodos);
 // DELETE Delete ToDo given an ID (destroy or soft delete)
-router.delete('/todos/:id', deleteTodo);
+router.delete('/:id', deleteTodo);
 
 module.exports = { todosRouter: router };
